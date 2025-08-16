@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Noto Sans JP Variable";
+    src: url("./NotoSansJP-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans JP Variable";
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: none;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #483B35;
+}
+
+p {
+    color: #483B35;
+}
+
+a {
+    text-decoration: none;
+}

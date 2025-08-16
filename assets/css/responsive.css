@@ -1,0 +1,352 @@
+@media (max-width: 1800px) {
+  .fv-left-text {
+    top: 52%;
+    left: 16%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .fv-left-text {
+    top: 55%;
+    left: 15%;
+  }
+
+  .fv-right-text {
+    top: 17%;
+    right: 6%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .fv-left-text {
+    top: 53%;
+    left: 14%;
+  }
+
+  .fv-right-text {
+    top: 16%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .fv-left-text {
+    top: 53%;
+    left: 13%;
+  }
+
+  .fv-right-text {
+    top: 15%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding-right: 4%;
+    padding-left: 3%;
+  }
+
+  .header-right {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .fv-left-text {
+    top: 52%;
+    left: 11%;
+  }
+
+  .fv-right-text {
+    top: 14%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .fv-left-text {
+    width: 261px;
+    top: 52%;
+    left: 13%;
+  }
+
+  .phone-text {
+    font-size: 16px;
+  }
+
+  .fv-left-text-phone {
+    margin-top: 18px;
+  }
+
+  .phone-number {
+    margin-top: 0;
+    justify-content: space-around;
+  }
+
+  .phone-number p {
+    font-size: 24px;
+  }
+
+  .phone-number img {
+    width: 23px;
+    height: 21px;
+  }
+
+  .fv-left-text-p {
+    margin-top: 29px;
+    font-size: 14px;
+  }
+
+  .fv-left-line {
+    width: 203px;
+    height: 42px;
+    padding: 7px 14px;
+    border-radius: 12px;
+  }
+
+  .fv-left-line img {
+    width: 26px;
+  }
+
+  .fv-left-line p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fv-left-text {
+    top: 53%;
+    left: 11%;
+  }
+
+  .fv-right-text {
+    top: 13%;
+    right: 7%;
+  }
+
+  .news-bar {
+    padding: 19px 30px 19px 25px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: 80px;
+  }
+
+  .header-right {
+    gap: 40px;
+  }
+
+  .fv-left-text {
+    top: 34%;
+    left: 10%;
+  }
+
+  .social-icons img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .dots {
+    margin-left: 20px;
+  }
+
+  .nav-label span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .fv-left-text {
+    top: 52%;
+    left: 9%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fv-left-text {
+    width: 210px;
+    top: 51%;
+    left: 11%;
+  }
+
+  .phone-text {
+    font-size: 14px;
+  }
+
+  .fv-left-text-phone {
+    margin-top: 18px;
+  }
+
+  .phone-number {
+    margin-top: 0;
+    justify-content: space-around;
+  }
+
+  .phone-number p {
+    font-size: 21px;
+  }
+
+  .phone-number img {
+    width: 19px;
+    height: 18px;
+  }
+
+  .fv-left-text-p {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+
+  .fv-left-line {
+    width: 178px;
+    height: 35px;
+    padding: 7px 14px;
+    border-radius: 12px;
+  }
+
+  .fv-left-line img {
+    width: 22px;
+  }
+
+  .fv-left-line p {
+    font-size: 14px;
+  }
+
+  .recept-time-btn {
+    width: 95px;
+    height: 23px;
+    font-size: 14px;
+  }
+
+  .recept-time-p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .fv-left-text {
+    top: 51%;
+    left: 9%;
+  }
+
+  .fv-right-text {
+    top: 12%;
+    right: 6%;
+  }
+
+  .logo {
+    width: 90px;
+    height: 40px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .dots {
+    margin-left: 10px;
+  }
+
+  .news-bar {
+    width: 530px;
+    padding: 19px 20px 19px 25px;
+    font-size: 14px;
+  }
+
+  .news-date {
+    margin-right: 13px;
+  }
+
+  .news-tag {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fv-left-text {
+    top: 48%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+ .news-tag {
+  display: none;
+ }
+
+ .fv-news-content {
+  flex-direction: column;
+ }
+.fv-main-img {
+  display: none;
+}
+ .sp-main-img {
+  display: block;
+  width: 80%;
+}
+
+.fv-left-text {
+  display: none;
+}
+
+.fv-right-text {
+  position: unset;
+  width: 70%;
+  margin-bottom: 30px;
+  min-width: 320px;
+}
+
+.news-bar {
+  position: unset;
+  margin-right: 0;
+  margin-left: auto;
+  padding-block: 10px;
+  margin-top: 30px;
+}
+
+.fv-container {
+  position: absolute;
+  padding-top: 50px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fv-background {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.fv-news-content {
+  flex-direction: row;
+}
+}
+
+@media (max-width: 600px) {
+  .fv-news-content {
+  flex-direction: column;
+}
+
+.news-bar {
+  width: 340px;
+}
+
+.fv-background {
+  aspect-ratio: 1/1.1;
+}
+}
+
+@media (max-width: 500px) {
+  .fv-background {
+  aspect-ratio: 1/1.2;
+}
+}
