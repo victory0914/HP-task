@@ -255,7 +255,7 @@
   }
 
   .news-bar {
-    width: 530px;
+    width: unset;
     padding: 19px 20px 19px 25px;
     font-size: 14px;
   }
