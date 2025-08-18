@@ -80,3 +80,17 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+// Seamless marquee for about carousel
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        var track = document.querySelector('.about-carousel-track');
+        if (!track) return;
+        var items = Array.from(track.children);
+        if (items.length === 0) return;
+        // Clone the full set once to allow 50% translate loop
+        items.forEach(function(node) {
+            track.appendChild(node.cloneNode(true));
+        });
+    });
+})();

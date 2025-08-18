@@ -920,6 +920,7 @@ body {
     width: 130px;
 }
 
+
 /* .news-badge {
     border-radius: 50px;
     color: white;
@@ -1426,19 +1427,15 @@ body {
         height: 540px;
         left: 300px;
     }
-
     .hero-dog1 {
         left: 150px;
     }
-
     .hero-dog3 {
         left: 1200px;
     }
-
     .hero-text {
         right: 80px;
     }
-
     .news-ticker {
         width: 600px;
         right: 150px;
@@ -1449,26 +1446,21 @@ body {
     .header {
         padding: 14px 40px;
     }
-
     .hero-main {
         width: 700px;
         height: 420px;
         left: 250px;
     }
-
     .logo-placeholder {
         width: 200px;
     }
-
     .hero-dog1,
     .hero-dog3 {
         display: none;
     }
-
     .hero-contact {
         left: 150px;
     }
-
     .news-ticker {
         width: 500px;
         right: 100px;
@@ -1476,30 +1468,24 @@ body {
     .about-content {
         padding: 0 20px;
     }
-
     .concerns {
         background-color: #F2F2F2;
         background-image: none;
     }
-
     .concerns-container {
         padding: 0 40px;
     }
-
     .concerns-title {
         display: none;
     }
-
     .sp-concerns-title-container {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
     .concern-text {
         top: 20px;
     }
-
     .sp-concerns-title {
         background: url('../image/workBg.png') no-repeat center center;
         background-size: 100% 100%;
@@ -1513,69 +1499,55 @@ body {
         padding: 40px 40px;
         color: #483B35;
     }
-
     .sp-concerns-title .highlight {
         color: #E88F75;
     }
-
     .concerns-items {
         flex-wrap: wrap;
         gap: 15px;
     }
-
     .concern-item {
         width: 33%;
     }
-
     .work-image-container {
         width: 100%;
         max-width: 800px;
     }
-
     .staff-images {
         flex-direction: column;
         align-items: center;
     }
-
     .staff-image {
         width: 500px;
         height: 350px;
     }
-
     .contact-methods {
         flex-direction: column;
         gap: 40px;
     }
-
     .contact-phone {
         border-left: none;
     }
-
     .location-info {
         flex-direction: column;
         align-items: center;
     }
-
     .facility-info,
     .map-placeholder {
         width: 100%;
         max-width: 550px;
     }
-
     .contact-line,
     .contact-phone {
         width: 60%;
     }
-
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
-
     .footer-column h4 {
         text-align: start;
     }
-
     .footer-links {
         justify-content: center;
         flex-wrap: wrap;
@@ -1586,23 +1558,18 @@ body {
     .nav {
         gap: 15px;
     }
-
     .nav-item {
         font-size: 14px;
     }
-
     .dropdown {
         min-width: 200px;
     }
-
     .dropdown-grid {
         min-width: 300px;
     }
-
     .hero {
         height: 700px;
     }
-
     .hero-main {
         width: 600px;
         height: 360px;
@@ -1610,38 +1577,31 @@ body {
         transform: translateX(-50%);
         left: calc(50% - 300px);
     }
-
     .hero-text {
         right: 40px;
         top: 100px;
     }
-
     .hero-title {
         font-size: 32px;
         line-height: 64px;
     }
-
     .hero-contact {
         left: 50px;
         top: 450px;
     }
-
     .news-ticker {
         right: 20px;
         width: 400px;
         font-size: 14px;
     }
-
     .about-title {
         font-size: 20px;
     }
-
     .about-text p {
         font-size: 14px;
         letter-spacing: 2px;
         line-height: 28px;
     }
-
     .concerns-title {
         background: url(../image/workBg.png) no-repeat center center;
         background-size: contain;
@@ -1654,7 +1614,6 @@ body {
         align-items: center;
         justify-content: center;
     }
-
     .concerns-description p {
         background-color: #F2F2F2;
         flex-direction: column;
@@ -1666,32 +1625,26 @@ body {
         letter-spacing: 2px;
         line-height: 26px;
     }
-
     .work-title {
         font-size: 20px;
         line-height: 40px;
         padding: 0 20px;
     }
-
     .voices-title {
         font-size: 20px;
     }
-
     .voices-description {
         font-size: 14px;
         letter-spacing: 2px;
         padding: 0 20px;
     }
-
     .quick-item {
         width: 350px;
         height: 160px;
     }
-
     .news-container {
         padding: 30px 20px;
     }
-
     .contact-description {
         font-size: 16px;
         letter-spacing: 2px;
@@ -1705,18 +1658,15 @@ body {
         height: auto;
         min-height: 80px;
     }
-
     .logo-placeholder {
         width: 200px;
         height: 50px;
     }
-
     .mobile-menu-toggle {
         display: flex;
         order: 2;
         margin-left: 40px;
     }
-
     .nav {
         order: 3;
         width: 100%;
@@ -1728,27 +1678,22 @@ body {
         padding-top: 15px;
         display: none;
     }
-
     .nav.active {
         display: flex;
     }
-
     .nav-item {
         width: 100%;
         padding: 15px 0;
         border-bottom: 1px solid #F0F0F0;
         justify-content: space-between;
     }
-
     .nav-item:last-child {
         border-bottom: none;
     }
-
     .nav-underline {
         position: static;
         transform: none;
     }
-
     .dropdown {
         position: static;
         transform: none;
@@ -1760,52 +1705,42 @@ body {
         margin-top: 10px;
         display: none;
     }
-
     .dropdown.active {
         display: block;
     }
-
     .dropdown-grid {
         display: block;
         min-width: auto;
     }
-
     .dropdown-item {
         border-right: none !important;
         border-bottom: 1px solid #E5E5E5;
     }
-
     .social-icons {
         order: 1;
         margin-left: auto;
     }
-
     .social-icons img {
         width: 30px;
         height: 30px;
     }
-
     .hero {
         height: auto;
         min-height: 100vh;
         background: linear-gradient(180deg, #FFF5E6 0%, #FFFFFF 100%);
     }
-
     .hero-bg {
         display: none;
     }
-
     .about-btn {
         transform: translateY(-281px)
     }
-
     .hero-images {
         height: auto;
         position: relative;
         text-align: center;
         padding: 40px 20px 20px;
     }
-
     .hero-main {
         position: relative;
         width: 280px;
@@ -1818,13 +1753,11 @@ body {
         object-fit: cover;
         display: block;
     }
-
     .hero-dog1,
     .hero-dog2,
     .hero-dog3 {
         display: none;
     }
-
     .hero-text {
         position: relative;
         right: auto;
@@ -1833,7 +1766,6 @@ body {
         padding: 30px 20px 40px;
         margin: 0;
     }
-
     .hero-title {
         font-size: 24px;
         line-height: 38px;
@@ -1842,18 +1774,15 @@ body {
         font-weight: 700;
         letter-spacing: 1px;
     }
-
     .hero-title .title-symbol {
         color: #F7AC3B;
         font-size: 20px;
         font-weight: 900;
         margin: 0 5px;
     }
-
     .hero-title .title-symbol:last-of-type {
         color: #E88F75;
     }
-
     .hero-contact {
         display: none;
         position: relative;
@@ -1865,17 +1794,14 @@ body {
         border-radius: 20px 20px 0 0;
         box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
     }
-
     .line-btn {
         width: 200px;
         height: 45px;
     }
-
     .line-btn span {
         font-size: 16px;
         letter-spacing: 2px;
     }
-
     .news-ticker {
         position: relative;
         right: auto;
@@ -1890,12 +1816,10 @@ body {
         align-items: flex-start;
         gap: 8px;
     }
-
     .news-ticker span {
         font-size: 14px;
         letter-spacing: 1px;
     }
-
     .news-label {
         color: black;
         padding: 4px 12px;
@@ -1903,50 +1827,41 @@ body {
         font-size: 12px;
         font-weight: 500;
     }
-
     .about-image3 {
         display: block;
         transform: translate(-79px, 55px);
         width: 173px;
         height: 132px;
     }
-
     .about {
         padding: 60px 20px 0 20px;
     }
-
     .about-content {
         flex-direction: column;
         margin-bottom: 0;
         gap: 20px;
     }
-
     .about-image {
         display: none;
     }
-
     .about-image2 {
         transform: translate(102px, -181px);
         width: 173px;
         height: 132px;
     }
-
     .about-text {
         max-width: none;
     }
-
     .about-text p {
         margin-bottom: 32px;
         font-size: 13px;
         letter-spacing: 1px;
         line-height: 24px;
     }
-
     .concerns {
         background: none;
         padding: 60px 20px;
     }
-
     .concerns-container {
         padding: 0;
         padding-top: 12px;
@@ -1957,188 +1872,148 @@ body {
         border-radius: 10px / 50%;
         border-radius: 10px 10px 0px 0px;
     }
-
     .sp-concerns-title {
         margin-bottom: 0;
     }
-
     .concern-text {
         top: 14px;
     }
-
     .concerns-items {
         margin-bottom: 35px;
     }
-
     .concerns-description {
         padding-bottom: 20px;
     }
-
     .concern-item {
         width: 100%;
         max-width: 280px;
     }
-
     .concern-bg {
         width: 100% !important;
     }
-
     .work-content {
         padding: 60px 20px;
     }
-
     .work-image-container {
         width: 100%;
         height: 200px;
     }
-
     .absolute {
         top: 60px;
     }
-
     .work-subtitle {
         font-size: 20px;
         line-height: 36px;
     }
-
     .voices {
         margin: 0;
         padding: 60px 20px;
     }
-
     .voice-card {
         width: 100%;
         max-width: 300px;
     }
-
     .staff {
         padding: 60px 20px;
     }
-
     .staff-image {
         width: 100%;
         max-width: 400px;
         height: 280px;
     }
-
     .quick-access {
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding: 40px 20px;
     }
-
     .quick-item {
         width: 100%;
         max-width: 350px;
     }
-
     .news {
         padding: 60px 20px;
     }
-
     .news-container {
         padding: 30px 20px;
     }
-
     .news-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-
     .news-date {
         width: auto;
         font-size: 14px;
     }
-
     .news-badge {
         width: auto;
         font-size: 13px;
     }
-
     .news-title-item {
         font-size: 14px;
         letter-spacing: 2px;
     }
-
     .contact {
         padding: 24px 20px 0 20px;
     }
-
     .contact-container {
         padding: 0;
     }
-
     .line-contact-btn {
         width: 100%;
         max-width: 280px;
         height: 60px;
     }
-
     .line-contact-btn span {
         font-size: 20px;
         letter-spacing: 3px;
     }
-
     .contact-form-btn {
         width: 100%;
         max-width: 320px;
         height: 50px;
     }
-
     .phone-num {
         font-size: 28px;
         line-height: 50px;
     }
-
     .location {
         padding: 24px 20px;
     }
-
     .location-info {
         gap: 24px;
     }
-
     .facility-info {
         padding: 20px;
     }
-
     .hours-schedule img {
         width: 100%;
         max-width: 442px;
         height: auto;
     }
-
     .footer {
         padding: 40px 0 20px;
     }
-
     .footer-container {
         padding: 0 20px;
     }
-
     .footer-contact-btn {
         width: 100%;
         max-width: 320px;
     }
-
     .footer-links {
         gap: 30px;
     }
-
     .footer-column {
         min-width: auto;
     }
-
     .footer-address {
         display: none;
     }
-
     .footer-column li {
         white-space: normal;
     }
-
     .footer-contact {
         flex-direction: column;
         align-items: center;
@@ -2149,7 +2024,6 @@ body {
     .concern-text {
         top: 12px;
     }
-
     .contact-line,
     .contact-phone {
         width: 70%;
@@ -2160,47 +2034,38 @@ body {
     .header {
         padding: 10px 15px;
     }
-
     .logo-placeholder {
         width: 150px;
         height: 40px;
     }
-
     .nav-item {
         font-size: 14px;
         padding: 12px 0;
     }
-
     .dropdown-item {
         font-size: 13px;
         padding: 10px 15px;
     }
-
     .social-icons img {
         width: 25px;
         height: 25px;
     }
-
     .hero-title {
         font-size: 20px;
         line-height: 32px;
     }
-
     .hero-title .title-symbol {
         font-size: 18px;
         line-height: 32px;
     }
-
     .phone-label {
         font-size: 16px;
         letter-spacing: 1px;
     }
-
     .phone-number span {
         font-size: 24px;
         line-height: 40px;
     }
-
     .about-title,
     .work-title,
     .voices-title,
@@ -2209,19 +2074,15 @@ body {
         font-size: 18px;
         letter-spacing: 3px;
     }
-
     .news-title {
         margin-bottom: 20px;
     }
-
     .staff {
         padding: 20px;
     }
-
     .news {
         padding: 20px;
     }
-
     .concerns-title {
         background: url(../image/workBg.png) no-repeat center center;
         background-size: cover;
@@ -2229,58 +2090,47 @@ body {
         font-size: 20px;
         line-height: 40px;
     }
-
     .about-text p,
     .concerns-description p {
         text-align: left;
         font-size: 12px;
         line-height: 22px;
     }
-
     .voices-description {
         font-size: 13px;
         line-height: 24px;
     }
-
     .work-subtitle {
         font-size: 18px;
         line-height: 32px;
     }
-
     .quick-item span {
         font-size: 14px;
         letter-spacing: 2px;
     }
-
     .location-info {
         padding: 0;
     }
-
     .contact-description {
         font-size: 14px;
         line-height: 28px;
     }
-
     .contact-line,
     .contact-phone {
         width: 80%;
     }
-
     .phone-num {
         font-size: 24px;
         line-height: 40px;
     }
-
     .line-contact-btn span {
         font-size: 18px;
         letter-spacing: 2px;
     }
-
     .footer-logo h2 {
         font-size: 16px;
         line-height: 32px;
     }
-
     .footer-address {
         display: none;
         font-size: 14px;
