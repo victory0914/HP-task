@@ -1,0 +1,138 @@
+.sub-news {
+  width: 100%;
+  background: #ECE5D6;
+  padding: 160px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  gap: 60px;
+}
+
+.sub-news-inner {
+  max-width: 1200px;
+  width: 94%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  padding: 80px 100px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.sub-news-date {
+  font-size: 15px;
+  color: #55462b;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #929292;
+}
+
+.sub-news-tag {
+  display: inline-block;
+  font-size: 12px;
+  background: #F7CE66;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 13px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.sub-news-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 22px 0;
+  color: #222;
+  letter-spacing: 0.04em;
+}
+
+.sub-news-content {
+  font-size: 18px;
+  padding-top: 20px;
+  color: #222;
+  line-height: 2;
+  margin-bottom: 32px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.sub-news-button-wrap {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.sub-news-button-wrap span {
+  margin-left: 8px;
+}
+.sub-news-button {
+  display: inline-block;
+  background: #E88F75;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 38px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(213,178,130,0.13);
+}
+
+.sub-news-button:hover {
+  background: #dd865e;
+}
+
+.page-news {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  padding-inline: 40px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+    .sub-news {
+    gap: 40px;
+  padding: 120px 0 60px 0;
+
+  }
+  .sub-news-inner {
+  padding: 60px 80px;
+}
+}
+@media (max-width: 550px) {
+  .sub-news {
+    padding: 80px 0 40px 0;
+    gap: 20px;
+  }
+  .sub-news-inner {
+    max-width: 98%;
+     padding: 40px 60px;
+  }
+  .sub-news-title {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+  .sub-news-content {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .sub-news-button {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+  .sub-news-date {
+    font-size: 12px;
+    gap: 7px;
+  }
+  .sub-news-label {
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-left: 4px;
+  }
+}

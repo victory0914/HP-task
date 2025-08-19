@@ -1,6 +1,7 @@
 .ideology {
-  padding: 50px 0 100px 0;
+    padding: 50px 0 100px 0;
 }
+
 .ideology-content {
     display: flex;
     flex-direction: column;
@@ -176,9 +177,9 @@
 }
 
 .about-carousel-track {
-  padding-top: 60px;
-  height: 320px;
-  gap: 32px;
+    padding-top: 60px;
+    height: 320px;
+    gap: 32px;
     display: flex;
     align-items: center;
     width: max-content;
@@ -230,7 +231,7 @@
         transform: translateY(-60px);
     }
     .about-carousel-track {
-      height: 180px;
+        height: 180px;
     }
 }
 

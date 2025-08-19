@@ -1,514 +1,578 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>就労継続支援B型LINO</title>
-    <link rel="stylesheet" href="./assets/css/base_style.css">
-    <link rel="stylesheet" href="./assets/css/top.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/hamburger.css">
-    <link rel="stylesheet" href="./assets/css/subpage.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/service.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>就労継続支援B型LINO</title>
+        <link rel="stylesheet" href="./assets/css/base_style.css">
+        <link rel="stylesheet" href="./assets/css/top.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/hamburger.css">
+        <link rel="stylesheet" href="./assets/css/subpage.css">
+        <link rel="stylesheet" href="./assets/css/about.css">
+        <link rel="stylesheet" href="./assets/css/about.css">
+        <link rel="stylesheet" href="./assets/css/service.css">
+        <link rel="stylesheet" href="./assets/css/news.css">
+        <link rel="stylesheet" href="./assets/css/flow.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <div class="logo-placeholder"></div>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-placeholder"></div>
+            </div>
+
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav" id="nav">
+                <div class="nav-item" onclick="toggleDropdown(this, event)">
+                    <span>わたしたちについて</span>
+                    <div class="nav-underline "><img
+                            src="./assets/image/arrow.png" alt></div>
+                    <div class="dots">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> 施設紹介
+                        </div>
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> スタッフ紹介
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item" onclick="toggleDropdown(this, event)">
+                    <span>サービス案内</span>
+                    <div class="nav-underline"><img
+                            src="./assets/image/arrow.png" alt></div>
+                    <div class="dots">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> 就労支援B型事業所とは？
+                        </div>
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> お仕事内容
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" onclick="toggleDropdown(this, event)">
+                    <span>ご利用の流れ</span>
+                    <div class="nav-underline"><img
+                            src="./assets/image/arrow.png" alt></div>
+                    <div class="dots">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="dropdown dropdown-grid">
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> ご利用方法
+                        </div>
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> ご利用料金
+                        </div>
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> ご利用にあたっての注意事項
+                        </div>
+                        <div class="dropdown-item">
+                            <img src="./assets/image/arrowredish.png"
+                                alt="arrow"> よくある質問
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span>お知らせ</span>
+                </div>
+            </nav>
+            <div class="social-icons">
+                <img src="./assets/image/ig.png" alt="social1">
+                <img src="./assets/image/Line.png" alt="social2">
+            </div>
+        </header>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-content">
+                <!-- Menu Items -->
+                <div class="mobile-nav-item">
+                    <div class="mobile-nav-title"
+                        onclick="toggleMobileSubmenu(this)">
+                        わたしたちについて
+                        <span class="mobile-nav-plus">+</span>
+                    </div>
+                    <div class="mobile-dots-separator"></div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="mobile-nav-title"
+                        onclick="toggleMobileSubmenu(this)">
+                        サービス案内
+                        <span class="mobile-nav-plus">+</span>
+                    </div>
+                    <div class="mobile-dots-separator"></div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="mobile-nav-title"
+                        onclick="toggleMobileSubmenu(this)">
+                        ご利用の流れ
+                        <span class="mobile-nav-plus">+</span>
+                    </div>
+                    <div class="mobile-dots-separator"></div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="mobile-nav-title">
+                        お知らせ
+                    </div>
+                    <div class="mobile-dots-separator"></div>
+                </div>
+
+                <!-- Contact Button at Bottom -->
+                <div class="mobile-contact-section">
+                    <button class="mobile-contact-btn">
+                        <img src="./assets/image/mail.png" alt="mail"
+                            class="mail-icon">
+                        <span>お問い合わせ →</span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <nav class="nav" id="nav">
-            <div class="nav-item" onclick="toggleDropdown(this, event)">
+        <!-- Hero Section -->
+        <section class="fv">
+            <img src="./assets/image/fv-background.png" class="fv-background"
+                alt>
+            <div class="fv-container">
+                <img src="./assets/image/fv-right-text.png"
+                    class="fv-right-text" alt>
+                <img src="./assets/image/fv-main-img.png" class="fv-main-img"
+                    alt>
+                <img src="./assets/image/sp-main-img.png" class="sp-main-img"
+                    alt>
+                <div class="fv-left-text">
+                    <div class="fv-left-text-phone">
+                        <img src="./assets/image/first-shape1.png"
+                            class="fv-left-text-img" alt>
+                        <p class="phone-text">お電話でのご相談はこちら</p>
+                        <div class="phone-number">
+                            <img src="./assets/image/phone-shape.png" alt>
+                            <p>000-000-0000</p>
+                        </div>
+                        <div class="recept-time-btn">受付時間</div>
+                        <p class="recept-time-p">月～金 9:00～18:00</p>
+                    </div>
+                    <div class="fv-left-text-p">＼お気軽にご相談ください／</div>
+                    <button class="fv-left-line">
+                        <img src="./assets/image/white-line.png" alt>
+                        <p>LINEで相談する</p>
+                    </button>
+                </div>
+                <div class="news-bar">
+                    <span class="news-label">新着情報</span>
+                    <div class="fv-news-content">
+                        <span class="news-date">2025.07.01</span>
+                        <span class="news-tag">ご案内</span>
+                        <a href="#" class="news-link">
+                            <p>当施設のご利用について</p>
+                            <span class="fv-arrow">▶</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about">
+            <h2 class="about-title">就労継続支援B型LINOとは？</h2>
+            <div class="about-content">
+                <img src="./assets/image/1stcat.png" alt="About image"
+                    class="about-image">
+                <div class="about-text">
+                    <p>就労継続支援B型LINOは、犬とふれあいながら、<br /> 自分のペースで無理なく働ける就労支援の場です。
+                        <br /> 動物たちとのあたたかな時間が心をほぐし、
+                        <br /> 少しずつ「働くこと」に自信を持てるようになります。
+                        <br /> 動物が好きな方、社会と関わる第一歩を踏み出したい方に
+                        <br /> ぴったりの環境をご用意しています。
+                    </p>
+                </div>
+                <img src="./assets/image/1stcat.png" alt="About image"
+                    class="about-image3">
+                <img src="./assets/image/2ndcat.png" alt="About image 2"
+                    class="about-image2">
+            </div>
+            <button class="about-btn">
                 <span>わたしたちについて</span>
-                <div class="nav-underline "><img src="./assets/image/arrow.png" alt></div>
-                <div class="dots">
-                    <span></span><span></span><span></span><span></span>
-                </div>
-                <div class="dropdown">
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> 施設紹介
-                    </div>
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> スタッフ紹介
-                    </div>
-                </div>
-            </div>
-
-            <div class="nav-item" onclick="toggleDropdown(this, event)">
-                <span>サービス案内</span>
-                <div class="nav-underline"><img src="./assets/image/arrow.png" alt></div>
-                <div class="dots">
-                    <span></span><span></span><span></span><span></span>
-                </div>
-                <div class="dropdown">
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> 就労支援B型事業所とは？
-                    </div>
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> お仕事内容
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item" onclick="toggleDropdown(this, event)">
-                <span>ご利用の流れ</span>
-                <div class="nav-underline"><img src="./assets/image/arrow.png" alt></div>
-                <div class="dots">
-                    <span></span><span></span><span></span><span></span>
-                </div>
-                <div class="dropdown dropdown-grid">
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> ご利用方法
-                    </div>
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> ご利用料金
-                    </div>
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> ご利用にあたっての注意事項
-                    </div>
-                    <div class="dropdown-item">
-                        <img src="./assets/image/arrowredish.png" alt="arrow"> よくある質問
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">
-                <span>お知らせ</span>
-            </div>
-        </nav>
-        <div class="social-icons">
-            <img src="./assets/image/ig.png" alt="social1">
-            <img src="./assets/image/Line.png" alt="social2">
+                <img src="./assets/image/aboutarrow.png" alt="arrow"
+                    class="right-arrow">
+            </button>
+        </section>
+        <!-- Concerns Section -->
+        <div class="sp-concerns-title-container">
+            <h2 class="sp-concerns-title">
+                <span>働くことについて、<br />こんな</span>
+                <span class="highlight">お悩み</span>
+                <span>ありませんか？</span>
+            </h2>
         </div>
-    </header>
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-content">
-            <!-- Menu Items -->
-            <div class="mobile-nav-item">
-                <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
-                    わたしたちについて
-                    <span class="mobile-nav-plus">+</span>
+        <section class="concerns">
+            <h2 class="concerns-title">
+                <span>働くことについて、<br />こんな</span>
+                <span class="highlight">お悩み</span>
+                <span>ありませんか？</span>
+            </h2>
+            <div class="concerns-container">
+                <div class="concerns-items">
+                    <div class="concern-item">
+                        <img src="./assets/image/workmessage.png"
+                            alt="Concern 1" class="concern-bg">
+                        <span class="concern-text">コミュニケーションが苦手</span>
+                        <img src="./assets/image/work1.png" alt="Icon 1"
+                            class="concern-icon">
+                    </div>
+                    <div class="concern-item">
+                        <img src="./assets/image/workmessage.png"
+                            alt="Concern 2" class="concern-bg">
+                        <span class="concern-text">独自の考えや強いこだわりがある</span>
+                        <img src="./assets/image/work2.png" alt="Icon 2"
+                            class="concern-icon">
+                    </div>
+                    <div class="concern-item">
+                        <img src="./assets/image/workmessage.png"
+                            alt="Concern 3" class="concern-bg">
+                        <span class="concern-text">理解や学習に時間がかかる</span>
+                        <img src="./assets/image/work3.png" alt="Icon 3"
+                            class="concern-icon">
+                    </div>
+                    <div class="concern-item">
+                        <img src="./assets/image/workmessage.png"
+                            alt="Concern 4" class="concern-bg">
+                        <span class="concern-text">短時間でも社会参加したい</span>
+                        <img src="./assets/image/work4.png" alt="Icon 4"
+                            class="concern-icon">
+                    </div>
                 </div>
-                <div class="mobile-dots-separator"></div>
-            </div>
 
-            <div class="mobile-nav-item">
-                <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
-                    サービス案内
-                    <span class="mobile-nav-plus">+</span>
+                <div class="concerns-description">
+                    <p>このような特性のある方は、「苦手なこと」ばかりが目立つように捉えられがちですが、<br />
+                        得意な作業を見つけると大きな力を発揮することもあります。
+                        <br /> その人に合った環境やサポートがあれば、安心して力を発揮できるのが大きな特徴です。
+                        <br /> 「見てわかる・聞いてわかる・安心して試せる」環境が大切です。
+                        <br /> 本人のペースを尊重し、無理なく続けられる仕組みがあれば、安定して長く働くことができます。
+                    </p>
                 </div>
-                <div class="mobile-dots-separator"></div>
-            </div>
 
-            <div class="mobile-nav-item">
-                <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
-                    ご利用の流れ
-                    <span class="mobile-nav-plus">+</span>
-                </div>
-                <div class="mobile-dots-separator"></div>
-            </div>
-
-            <div class="mobile-nav-item">
-                <div class="mobile-nav-title">
-                    お知らせ
-                </div>
-                <div class="mobile-dots-separator"></div>
-            </div>
-
-            <!-- Contact Button at Bottom -->
-            <div class="mobile-contact-section">
-                <button class="mobile-contact-btn">
-                    <img src="./assets/image/mail.png" alt="mail" class="mail-icon">
-                    <span>お問い合わせ →</span>
+                <button class="concerns-btn">
+                    <span>詳しく見る</span>
+                    <img src="./assets/image/aboutarrow.png" alt="arrow"
+                        class="right-arrow">
                 </button>
             </div>
-        </div>
-    </div>
-    <!-- Hero Section -->
-    <section class="fv">
-        <img src="./assets/image/fv-background.png" class="fv-background" alt>
-        <div class="fv-container">
-            <img src="./assets/image/fv-right-text.png" class="fv-right-text" alt>
-            <img src="./assets/image/fv-main-img.png" class="fv-main-img" alt>
-            <img src="./assets/image/sp-main-img.png" class="sp-main-img" alt>
-            <div class="fv-left-text">
-                <div class="fv-left-text-phone">
-                    <img src="./assets/image/first-shape1.png" class="fv-left-text-img" alt>
-                    <p class="phone-text">お電話でのご相談はこちら</p>
-                    <div class="phone-number">
-                        <img src="./assets/image/phone-shape.png" alt>
-                        <p>000-000-0000</p>
-                    </div>
-                    <div class="recept-time-btn">受付時間</div>
-                    <p class="recept-time-p">月～金 9:00～18:00</p>
-                </div>
-                <div class="fv-left-text-p">＼お気軽にご相談ください／</div>
-                <button class="fv-left-line">
-            <img src="./assets/image/white-line.png" alt>
-            <p>LINEで相談する</p>
-          </button>
-            </div>
-            <div class="news-bar">
-                <span class="news-label">新着情報</span>
-                <div class="fv-news-content">
-                    <span class="news-date">2025.07.01</span>
-                    <span class="news-tag">ご案内</span>
-                    <a href="#" class="news-link">
-                        <p>当施設のご利用について</p>
-                        <span class="fv-arrow">▶</span>
-                    </a>
+        </section>
+        <!-- Work Content Section -->
+        <section class="work-content">
+            <h2 class="work-title">
+                「わたしにもできるかな？」「はじめてでも大丈夫？」<br /> そんな不安が安心に変わるお仕事があります。
+            </h2>
+
+            <!-- Container for image and overlay -->
+            <div class="work-image-container">
+                <img src="./assets/image/jobDescription.png" alt="Work content"
+                    class="work-image">
+
+                <div class="absolute">
+                    <h3 class="work-subtitle">お仕事内容</h3>
+                    <button class="work-btn">
+                        <span>詳しく見る</span>
+                        <img src="./assets/image/aboutarrow.png" alt="arrow"
+                            class="right-arrow">
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="about">
-        <h2 class="about-title">就労継続支援B型LINOとは？</h2>
-        <div class="about-content">
-            <img src="./assets/image/1stcat.png" alt="About image" class="about-image">
-            <div class="about-text">
-                <p>就労継続支援B型LINOは、犬とふれあいながら、<br /> 自分のペースで無理なく働ける就労支援の場です。
-                    <br /> 動物たちとのあたたかな時間が心をほぐし、
-                    <br /> 少しずつ「働くこと」に自信を持てるようになります。
-                    <br /> 動物が好きな方、社会と関わる第一歩を踏み出したい方に
-                    <br /> ぴったりの環境をご用意しています。
+        </section>
+        <!-- User Voices Section -->
+        <section class="voices">
+            <div class="voices-container">
+                <h2 class="voices-title">利用者様の声</h2>
+                <p class="voices-description">
+                    「安心して通えるようになった」「少しずつ自信がついた」<br /> そんな前向きな声が、日々届いています。
+                    <br /> ここでは実際の利用者様の声をご紹介します。
                 </p>
-            </div>
-            <img src="./assets/image/1stcat.png" alt="About image" class="about-image3">
-            <img src="./assets/image/2ndcat.png" alt="About image 2" class="about-image2">
-        </div>
-        <button class="about-btn">
-        <span>わたしたちについて</span>
-        <img src="./assets/image/aboutarrow.png" alt="arrow"
-          class="right-arrow">
-      </button>
-    </section>
-    <!-- Concerns Section -->
-    <div class="sp-concerns-title-container">
-        <h2 class="sp-concerns-title">
-            <span>働くことについて、<br />こんな</span>
-            <span class="highlight">お悩み</span>
-            <span>ありませんか？</span>
-        </h2>
-    </div>
-    <section class="concerns">
-        <h2 class="concerns-title">
-            <span>働くことについて、<br />こんな</span>
-            <span class="highlight">お悩み</span>
-            <span>ありませんか？</span>
-        </h2>
-        <div class="concerns-container">
-            <div class="concerns-items">
-                <div class="concern-item">
-                    <img src="./assets/image/workmessage.png" alt="Concern 1" class="concern-bg">
-                    <span class="concern-text">コミュニケーションが苦手</span>
-                    <img src="./assets/image/work1.png" alt="Icon 1" class="concern-icon">
-                </div>
-                <div class="concern-item">
-                    <img src="./assets/image/workmessage.png" alt="Concern 2" class="concern-bg">
-                    <span class="concern-text">独自の考えや強いこだわりがある</span>
-                    <img src="./assets/image/work2.png" alt="Icon 2" class="concern-icon">
-                </div>
-                <div class="concern-item">
-                    <img src="./assets/image/workmessage.png" alt="Concern 3" class="concern-bg">
-                    <span class="concern-text">理解や学習に時間がかかる</span>
-                    <img src="./assets/image/work3.png" alt="Icon 3" class="concern-icon">
-                </div>
-                <div class="concern-item">
-                    <img src="./assets/image/workmessage.png" alt="Concern 4" class="concern-bg">
-                    <span class="concern-text">短時間でも社会参加したい</span>
-                    <img src="./assets/image/work4.png" alt="Icon 4" class="concern-icon">
-                </div>
-            </div>
 
-            <div class="concerns-description">
-                <p>このような特性のある方は、「苦手なこと」ばかりが目立つように捉えられがちですが、<br /> 得意な作業を見つけると大きな力を発揮することもあります。
-                    <br /> その人に合った環境やサポートがあれば、安心して力を発揮できるのが大きな特徴です。
-                    <br /> 「見てわかる・聞いてわかる・安心して試せる」環境が大切です。
-                    <br /> 本人のペースを尊重し、無理なく続けられる仕組みがあれば、安定して長く働くことができます。
-                </p>
-            </div>
-
-            <button class="concerns-btn">
-          <span>詳しく見る</span>
-          <img src="./assets/image/aboutarrow.png" alt="arrow"
-            class="right-arrow">
-        </button>
-        </div>
-    </section>
-    <!-- Work Content Section -->
-    <section class="work-content">
-        <h2 class="work-title">
-            「わたしにもできるかな？」「はじめてでも大丈夫？」<br /> そんな不安が安心に変わるお仕事があります。
-        </h2>
-
-        <!-- Container for image and overlay -->
-        <div class="work-image-container">
-            <img src="./assets/image/jobDescription.png" alt="Work content" class="work-image">
-
-            <div class="absolute">
-                <h3 class="work-subtitle">お仕事内容</h3>
-                <button class="work-btn">
-            <span>詳しく見る</span>
-            <img src="./assets/image/aboutarrow.png" alt="arrow"
-              class="right-arrow">
-          </button>
-            </div>
-        </div>
-    </section>
-    <!-- User Voices Section -->
-    <section class="voices">
-        <div class="voices-container">
-            <h2 class="voices-title">利用者様の声</h2>
-            <p class="voices-description">
-                「安心して通えるようになった」「少しずつ自信がついた」<br /> そんな前向きな声が、日々届いています。
-                <br /> ここでは実際の利用者様の声をご紹介します。
-            </p>
-
-            <!-- Carousel Wrapper -->
-            <div class="voices-wrapper">
-                <button class="arrow left">&#10094;</button>
-                <div class="voices-carousel">
-                    <div class="voice-card">
-                        <div class="voice-header">
-                            <img src="./assets/image/voice1.png" alt="User 1" class="voice-avatar">
-                            <h4 class="voice-name">O・Yさん 19歳</h4>
+                <!-- Carousel Wrapper -->
+                <div class="voices-wrapper">
+                    <button class="arrow left">&#10094;</button>
+                    <div class="voices-carousel">
+                        <div class="voice-card">
+                            <div class="voice-header">
+                                <img src="./assets/image/voice1.png"
+                                    alt="User 1" class="voice-avatar">
+                                <h4 class="voice-name">O・Yさん 19歳</h4>
+                            </div>
+                            <p class="voice-text">
+                                なにをしたらいいのか一から丁寧に<br> 教えてくれるので、安心して通うこ
+                                <br> とができました。
+                            </p>
                         </div>
-                        <p class="voice-text">
-                            なにをしたらいいのか一から丁寧に<br> 教えてくれるので、安心して通うこ
-                            <br> とができました。
-                        </p>
-                    </div>
 
-                    <div class="voice-card">
-                        <div class="voice-header">
-                            <img src="./assets/image/voice2.png" alt="User 2" class="voice-avatar">
-                            <h4 class="voice-name">O・Yさん 19歳</h4>
+                        <div class="voice-card">
+                            <div class="voice-header">
+                                <img src="./assets/image/voice2.png"
+                                    alt="User 2" class="voice-avatar">
+                                <h4 class="voice-name">O・Yさん 19歳</h4>
+                            </div>
+                            <p
+                                class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
                         </div>
-                        <p class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
-                    </div>
-                    <div class="voice-card">
-                        <div class="voice-header">
-                            <img src="./assets/image/voice3.png" alt="User 3" class="voice-avatar">
-                            <h4 class="voice-name">O・Yさん 19歳</h4>
+                        <div class="voice-card">
+                            <div class="voice-header">
+                                <img src="./assets/image/voice3.png"
+                                    alt="User 3" class="voice-avatar">
+                                <h4 class="voice-name">O・Yさん 19歳</h4>
+                            </div>
+                            <p
+                                class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
                         </div>
-                        <p class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
-                    </div>
-                    <div class="voice-card">
-                        <div class="voice-header">
-                            <img src="./assets/image/voice4.png" alt="User 4" class="voice-avatar">
-                            <h4 class="voice-name">O・Yさん 19歳</h4>
+                        <div class="voice-card">
+                            <div class="voice-header">
+                                <img src="./assets/image/voice4.png"
+                                    alt="User 4" class="voice-avatar">
+                                <h4 class="voice-name">O・Yさん 19歳</h4>
+                            </div>
+                            <p
+                                class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
                         </div>
-                        <p class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
-                    </div>
-                    <div class="voice-card">
-                        <div class="voice-header">
-                            <img src="./assets/image/voice5.png" alt="User 5" class="voice-avatar">
-                            <h4 class="voice-name">O・Yさん 19歳</h4>
+                        <div class="voice-card">
+                            <div class="voice-header">
+                                <img src="./assets/image/voice5.png"
+                                    alt="User 5" class="voice-avatar">
+                                <h4 class="voice-name">O・Yさん 19歳</h4>
+                            </div>
+                            <p
+                                class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
                         </div>
-                        <p class="voice-text">なにをしたらいいのか一から丁寧に<br />教えてくれるので、安心して通うこ<br />とができました。</p>
                     </div>
-                </div>
-                <button class="arrow right">&#10095;</button>
-            </div>
-        </div>
-    </section>
-    <!-- Staff Section -->
-    <section class="staff">
-        <h2 class="staff-title">スタッフ紹介</h2>
-        <p class="staff-description">やさしさと思いやりを大切にするスタッフがそろっています。</p>
-        <div class="staff-images">
-            <img src="./assets/image/Staff1.png" alt="Staff 1" class="staff-image">
-            <img src="./assets/image/Staff2.png" alt="Staff 2" class="staff-image">
-        </div>
-        <button class="staff-btn">
-        <span>詳しく見る</span>
-        <img src="./assets/image/aboutarrow.png" alt="arrow"
-          class="right-arrow">
-      </button>
-    </section>
-    <!-- Quick Access -->
-    <section class="quick-access">
-        <div class="quick-item flow">
-            <span>ご利用の流れ→</span>
-            <img src="./assets/image/writting.png" alt="Flow icon">
-        </div>
-        <div class="quick-item faq">
-            <span>よくある質問→</span>
-            <img src="./assets/image/think.png" alt="FAQ icon">
-        </div>
-    </section>
-    <!-- News Section -->
-    <section class="news">
-        <h2 class="news-title">お知らせ</h2>
-        <div class="news-container">
-            <div class="news-list">
-                <div class="news-item">
-                    <div class="news-date-badge">
-                        <span class="news-date">2025.07.01</span>
-                        <span class="news-badge info">ご案内</span>
-                    </div>
-                    <span class="news-title-item">当施設のご利用について</span>
-                </div>
-                <div class="news-item">
-                    <div class="news-date-badge">
-                        <span class="news-date">2025.07.01</span>
-                        <span class="news-badge notice">お知らせ</span>
-                    </div>
-
-                    <span class="news-title-item">当施設のご利用について</span>
-                </div>
-                <div class="news-item">
-                    <div class="news-date-badge">
-                        <span class="news-date">2025.07.01</span>
-                        <span class="news-badge notice">お知らせ</span>
-                    </div>
-
-                    <span class="news-title-item">当施設のご利用について</span>
-                </div>
-                <div class="news-item">
-                    <div class="news-date-badge">
-                        <span class="news-date">2025.07.01</span>
-                        <span class="news-badge newsletter">LINO通信</span>
-                    </div>
-
-                    <span class="news-title-item">当施設のご利用について</span>
+                    <button class="arrow right">&#10095;</button>
                 </div>
             </div>
-            <button class="news-btn">
-          <span>お知らせ一覧</span>
-          <img src="./assets/image/whitearrow.png" alt="arrow"
-            class="right-arrow">
-        </button>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="contact-container">
-
-            <div class="contact-methods">
-                <div class="contact-line">
-                    <p class="contact-description">ご支援のご相談、ご利用については<br />お気軽にお問い合わせください。</p>
-                    <p class="contact-subtitle">＼ご質問やご相談はいつでも承っております／</p>
-                    <button class="line-contact-btn">
-              <img src="./assets/image/white-line.png" alt="LINE">
-              <span>LINEで相談する</span>
+        </section>
+        <!-- Staff Section -->
+        <section class="staff">
+            <h2 class="staff-title">スタッフ紹介</h2>
+            <p class="staff-description">やさしさと思いやりを大切にするスタッフがそろっています。</p>
+            <div class="staff-images">
+                <img src="./assets/image/Staff1.png" alt="Staff 1"
+                    class="staff-image">
+                <img src="./assets/image/Staff2.png" alt="Staff 2"
+                    class="staff-image">
+            </div>
+            <button class="staff-btn">
+                <span>詳しく見る</span>
+                <img src="./assets/image/aboutarrow.png" alt="arrow"
+                    class="right-arrow">
             </button>
-                </div>
-                <div class="contact-phone">
-                    <h3>お電話でのお問合せ</h3>
-                    <div style="display:flex; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="./assets/image/iconcall.png" alt="phone">
-
-                        <p class="phone-num">000-000-0000</p>
+        </section>
+        <!-- Quick Access -->
+        <section class="quick-access">
+            <div class="quick-item flow">
+                <span>ご利用の流れ→</span>
+                <img src="./assets/image/writting.png" alt="Flow icon">
+            </div>
+            <div class="quick-item faq">
+                <span>よくある質問→</span>
+                <img src="./assets/image/think.png" alt="FAQ icon">
+            </div>
+        </section>
+        <!-- News Section -->
+        <section class="news">
+            <h2 class="news-title">お知らせ</h2>
+            <div class="news-container">
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-date-badge">
+                            <span class="news-date">2025.07.01</span>
+                            <span class="news-badge info">ご案内</span>
+                        </div>
+                        <span class="news-title-item">当施設のご利用について</span>
                     </div>
-                    <p class="phone-time">受付時間：月～金9:00～18:00</p>
-                    <button class="contact-form-btn">
-              <img src="./assets/image/mail.png" class="mail-icon">
-              <span>お問い合わせ→</span>
-            </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Location Section -->
-    <section class="location">
-        <div class="location-info">
-            <div class="facility-info">
-                <div class="voice-header">
-                    <div class="logo-black"></div>
-                    <h3>就労継続支援B型LINO</h3>
-                </div>
-                <div class="address">
-                    <p>〒901-0156<br />沖縄県那覇市田原3丁目8-1ユリ香ハウス</p>
-                    <p>TEL:080-8955-8079</p>
-                    <p>アクセス:那覇空港より車で10分</p>
-                </div>
-                <div class="hours-schedule">
-                    <img src="./assets/image/footercall.png" alt="Schedule">
+                    <div class="news-item">
+                        <div class="news-date-badge">
+                            <span class="news-date">2025.07.01</span>
+                            <span class="news-badge notice">お知らせ</span>
+                        </div>
 
-                </div>
-            </div>
-            <div class="map-placeholder"></div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>非営利徹底型一般社団法人<br />スマイル</h2>
-                <div class="footer-address">
-                    〒901-0156<br /> 沖縄県那覇市田原3丁目8-1ユリ香ハウス
-                    <br /> TEL:080-8955-8079
-                </div>
-            </div>
+                        <span class="news-title-item">当施設のご利用について</span>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date-badge">
+                            <span class="news-date">2025.07.01</span>
+                            <span class="news-badge notice">お知らせ</span>
+                        </div>
 
-            <div class="footer-right">
-                <div class="footer-contact">
-                    <div class="footer-contact-header">
+                        <span class="news-title-item">当施設のご利用について</span>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date-badge">
+                            <span class="news-date">2025.07.01</span>
+                            <span class="news-badge newsletter">LINO通信</span>
+                        </div>
+
+                        <span class="news-title-item">当施設のご利用について</span>
+                    </div>
+                </div>
+                <button class="news-btn">
+                    <span>お知らせ一覧</span>
+                    <img src="./assets/image/whitearrow.png" alt="arrow"
+                        class="right-arrow">
+                </button>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="contact-container">
+
+                <div class="contact-methods">
+                    <div class="contact-line">
+                        <p
+                            class="contact-description">ご支援のご相談、ご利用については<br />お気軽にお問い合わせください。</p>
+                        <p class="contact-subtitle">＼ご質問やご相談はいつでも承っております／</p>
+                        <button class="line-contact-btn">
+                            <img src="./assets/image/white-line.png" alt="LINE">
+                            <span>LINEで相談する</span>
+                        </button>
+                    </div>
+                    <div class="contact-phone">
                         <h3>お電話でのお問合せ</h3>
-                        <div class="footer-phone-section">
+                        <div
+                            style="display:flex; align-items: center; justify-content: center; gap: 10px;">
                             <img src="./assets/image/iconcall.png" alt="phone">
+
                             <p class="phone-num">000-000-0000</p>
                         </div>
-                        <p class="footer-hours">受付時間：月～金9:00～18:00</p>
+                        <p class="phone-time">受付時間：月～金9:00～18:00</p>
+                        <button class="contact-form-btn">
+                            <img src="./assets/image/mail.png"
+                                class="mail-icon">
+                            <span>お問い合わせ→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Location Section -->
+        <section class="location">
+            <div class="location-info">
+                <div class="facility-info">
+                    <div class="voice-header">
+                        <div class="logo-black"></div>
+                        <h3>就労継続支援B型LINO</h3>
+                    </div>
+                    <div class="address">
+                        <p>〒901-0156<br />沖縄県那覇市田原3丁目8-1ユリ香ハウス</p>
+                        <p>TEL:080-8955-8079</p>
+                        <p>アクセス:那覇空港より車で10分</p>
+                    </div>
+                    <div class="hours-schedule">
+                        <img src="./assets/image/footercall.png" alt="Schedule">
 
                     </div>
-                    <button class="footer-contact-btn">
-              <img src="./assets/image/mail.png" alt="contact"
-                class="mail-icon">
-              <span>お問い合わせ→</span>
-            </button>
+                </div>
+                <div class="map-placeholder"></div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h2>非営利徹底型一般社団法人<br />スマイル</h2>
+                    <div class="footer-address">
+                        〒901-0156<br /> 沖縄県那覇市田原3丁目8-1ユリ香ハウス
+                        <br /> TEL:080-8955-8079
+                    </div>
                 </div>
 
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>わたしたちについて</h4>
-                        <ul>
-                            <li><img src="./assets/image/arrowredish.png" alt="arrow">施設紹介</li>
-                            <li><img src="./assets/image/arrowredish.png" alt="arrow">スタッフ紹介</li>
-                            <li><strong>お知らせ</strong></li>
-                        </ul>
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <div class="footer-contact-header">
+                            <h3>お電話でのお問合せ</h3>
+                            <div class="footer-phone-section">
+                                <img src="./assets/image/iconcall.png"
+                                    alt="phone">
+                                <p class="phone-num">000-000-0000</p>
+                            </div>
+                            <p class="footer-hours">受付時間：月～金9:00～18:00</p>
+
+                        </div>
+                        <button class="footer-contact-btn">
+                            <img src="./assets/image/mail.png" alt="contact"
+                                class="mail-icon">
+                            <span>お問い合わせ→</span>
+                        </button>
                     </div>
-                    <div class="footer-column">
-                        <h4>サービス案内</h4>
-                        <ul>
-                            <li><img src="./assets/image/arrowredish.png" alt="arrow">就労支援B型事業所とは？</li>
-                            <li><img src="./assets/image/arrowredish.png" alt="arrow">お仕事内容</li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>ご利用の流れ</h4>
-                        <div class="column">
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>わたしたちについて</h4>
                             <ul>
-                                <li><img src="./assets/image/arrowredish.png" alt="arrow">ご利用方法</li>
-                                <li><img src="./assets/image/arrowredish.png" alt="arrow">ご利用料金</li>
+                                <li><img src="./assets/image/arrowredish.png"
+                                        alt="arrow">施設紹介</li>
+                                <li><img src="./assets/image/arrowredish.png"
+                                        alt="arrow">スタッフ紹介</li>
+                                <li><strong>お知らせ</strong></li>
                             </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>サービス案内</h4>
                             <ul>
-                                <li><img src="./assets/image/arrowredish.png" alt="arrow">ご利用にあたっての注意事項</li>
-                                <li><img src="./assets/image/arrowredish.png" alt="arrow">よくある質問</li>
+                                <li><img src="./assets/image/arrowredish.png"
+                                        alt="arrow">就労支援B型事業所とは？</li>
+                                <li><img src="./assets/image/arrowredish.png"
+                                        alt="arrow">お仕事内容</li>
                             </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>ご利用の流れ</h4>
+                            <div class="column">
+                                <ul>
+                                    <li><img
+                                            src="./assets/image/arrowredish.png"
+                                            alt="arrow">ご利用方法</li>
+                                    <li><img
+                                            src="./assets/image/arrowredish.png"
+                                            alt="arrow">ご利用料金</li>
+                                </ul>
+                                <ul>
+                                    <li><img
+                                            src="./assets/image/arrowredish.png"
+                                            alt="arrow">ご利用にあたっての注意事項</li>
+                                    <li><img
+                                            src="./assets/image/arrowredish.png"
+                                            alt="arrow">よくある質問</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2025 就労継続支援B型LINO</p>
-        </div>
-    </footer>
-</body>
-<script src="./assets/js/main.js"></script>
+            <div class="footer-copyright">
+                <p>© 2025 就労継続支援B型LINO</p>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/js/main.js"></script>
 
 </html>

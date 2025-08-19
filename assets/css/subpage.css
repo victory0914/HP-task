@@ -53,7 +53,12 @@
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
+.dog-footprint {
+  position: absolute;
+  width: 220px;
+  top: 10%;
+  left: 5%;
+}
 
 /* Responsive Design */
 

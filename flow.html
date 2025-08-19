@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>就労継続支援B型LINO</title>
+    <link rel="stylesheet" href="./assets/css/base_style.css">
+    <link rel="stylesheet" href="./assets/css/top.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/hamburger.css">
+    <link rel="stylesheet" href="./assets/css/subpage.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/service.css">
+    <link rel="stylesheet" href="./assets/css/news.css">
+    <link rel="stylesheet" href="./assets/css/flow.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-placeholder"></div>
+      </div>
+
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <div class="nav-item" onclick="toggleDropdown(this, event)">
+          <span>わたしたちについて</span>
+          <div class="nav-underline "><img src="./assets/image/arrow.png"
+              alt></div>
+          <div class="dots">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> 施設紹介
+            </div>
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> スタッフ紹介
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item" onclick="toggleDropdown(this, event)">
+          <span>サービス案内</span>
+          <div class="nav-underline"><img src="./assets/image/arrow.png"
+              alt></div>
+          <div class="dots">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow">
+              就労支援B型事業所とは？
+            </div>
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> お仕事内容
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" onclick="toggleDropdown(this, event)">
+          <span>ご利用の流れ</span>
+          <div class="nav-underline"><img src="./assets/image/arrow.png"
+              alt></div>
+          <div class="dots">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dropdown dropdown-grid">
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> ご利用方法
+            </div>
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> ご利用料金
+            </div>
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow">
+              ご利用にあたっての注意事項
+            </div>
+            <div class="dropdown-item">
+              <img src="./assets/image/arrowredish.png" alt="arrow"> よくある質問
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <span>お知らせ</span>
+        </div>
+      </nav>
+      <div class="social-icons">
+        <img src="./assets/image/ig.png" alt="social1">
+        <img src="./assets/image/Line.png" alt="social2">
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-content">
+        <!-- Menu Items -->
+        <div class="mobile-nav-item">
+          <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
+            わたしたちについて
+            <span class="mobile-nav-plus">+</span>
+          </div>
+          <div class="mobile-dots-separator"></div>
+        </div>
+
+        <div class="mobile-nav-item">
+          <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
+            サービス案内
+            <span class="mobile-nav-plus">+</span>
+          </div>
+          <div class="mobile-dots-separator"></div>
+        </div>
+
+        <div class="mobile-nav-item">
+          <div class="mobile-nav-title" onclick="toggleMobileSubmenu(this)">
+            ご利用の流れ
+            <span class="mobile-nav-plus">+</span>
+          </div>
+          <div class="mobile-dots-separator"></div>
+        </div>
+
+        <div class="mobile-nav-item">
+          <div class="mobile-nav-title">
+            お知らせ
+          </div>
+          <div class="mobile-dots-separator"></div>
+        </div>
+
+        <!-- Contact Button at Bottom -->
+        <div class="mobile-contact-section">
+          <button class="mobile-contact-btn">
+            <img src="./assets/image/mail.png" alt="mail" class="mail-icon">
+            <span>お問い合わせ →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="sub-fv">
+      <img src="./assets/image/dog-footprint.png" class="dog-footprint" alt>
+      <img src="./assets/image/flow-shape.png" class="sub-fv-shape" alt>
+      <div class="sub-fv-content">
+        <div class="sub-section-title">
+          <p>ご利用の流れ</p>
+          <span>service flow</span>
+        </div>
+        <img src="./assets/image/about-main-img.png" alt>
+      </div>
+    </section>
+    <div class="container">
+      <!-- Flow Step Section -->
+      <section class="flow-step">
+        <h2 class="flow-step-title">ご相談方法</h2>
+        <div class="step-list">
+          <div class="step-item">
+            <img src="./assets/image/step-number-icon1.png"
+              class="step-number-icon" alt>
+            <div class="step-details">
+              <img src="./assets/image/water-phone.png" class="step-water-icon"
+                alt>
+              <div class="step-details-title">
+                <div class="step-title">お電話でご相談</div>
+                <div class="step-desc">お電話にてご相談・ご依頼を承ります。お気軽にご連絡ください。</div>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <img src="./assets/image/step-number-icon2.png"
+              class="step-number-icon" alt>
+            <div class="step-details">
+              <img src="./assets/image/water-home.png" class="step-water-icon"
+                alt>
+              <div class="step-details-title">
+                <div class="step-title">見学・体験利用</div>
+                <div class="step-desc">事業所の雰囲気や作業内容を実際に見て、体験していただけます。</div>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <img src="./assets/image/step-number-icon3.png"
+              class="step-number-icon" alt>
+            <div class="step-details">
+              <img src="./assets/image/water-note.png" class="step-water-icon"
+                alt>
+              <div class="step-details-title">
+                <div class="step-title">利用申請のお手続き</div>
+                <div class="step-desc">市区町村の福祉窓口で、サービスの申請を行います。
+                  <br>スタッフがサポートしますのでご安心ください。</div>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <img src="./assets/image/step-number-icon4.png"
+              class="step-number-icon" alt>
+            <div class="step-details">
+              <img src="./assets/image/water-setting.png"
+                class="step-water-icon" alt>
+              <div class="step-details-title">
+                <div class="step-title">受給者証の発行</div>
+                <div
+                  class="step-desc">申請後、「障害福祉サービス受給者証」が発行されます（通常1～2週間ほど）。</div>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <img src="./assets/image/step-number-icon5.png"
+              class="step-number-icon" alt>
+            <div class="step-details">
+              <img src="./assets/image/water-hand.png" class="step-water-icon"
+                alt>
+              <div class="step-details-title">
+                <div class="step-title">ご契約・利用開始</div>
+                <div class="step-desc">契約を交わし、いよいよ利用スタート！
+                  <br>一人ひとりのペースに合わせて、スタッフがサポートします。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flow Price Section -->
+      <section class="flow-price">
+        <h2 class="flow-step-title">ご利用料金について</h2>
+        <p>就労継続支援B型事業所のご利用には、障害福祉サービスの制度に基づき、サービスにかかる費用の1割をご負担いただく仕組み となっています。
+          ただし、多くの方が「自己負担なし（0円）」でご利用されています。
+        </p>
+        <div class="price-table-wrapper">
+          <table>
+            <tr class="thead">
+              <th>世帯の収入区分</th>
+              <th>月額上限</th>
+            </tr>
+            <tr>
+              <td>生活保護受給世帯</td>
+              <td>0円</td>
+            </tr>
+            <tr>
+              <td>市民税非課税世帯</td>
+              <td>0円</td>
+            </tr>
+            <tr>
+              <td>一般世帯<br>(所得割16万円未満)</td>
+              <td>9,300円</td>
+            </tr>
+            <tr>
+              <td>上位所得世帯<br>(所得割16万円以上)</td>
+              <td>37,200円</td>
+            </tr>
+          </table>
+        </div>
+        <p
+          style="margin-top: 20px; ">上記以外の方でも、月にかかる費用の上限額が決まっているため、安心してサービスを受けていただけます。
+          <br>なお、昼食代や交通費などは自己負担となります。ご不明な点は、どうぞお気軽にお問い合わせください。</p>
+      </section>
+
+      <!-- Flow Caution Section -->
+      <section class="flow-caution">
+        <h2 class="flow-step-title">ご相談にあたっての注意事項</h2>
+        <div class="caution-content">
+          <div class="caution-section">
+            <h3>ご利用には「受給者証」が必要です</h3>
+            <ul>
+              <li>就労継続支援B型を利用するには、お住まいの市区町村から発行される「障害福祉サービス受給者証」が必要です。</li>
+              <li>申請手続きは、スタッフがしっかりサポートしますのでご安心ください。</li>
+            </ul>
+          </div>
+
+          <div class="caution-section">
+            <h3>利用できる時間や日数には個人差があります</h3>
+            <ul>
+              <li>体調やご希望に合わせて、無理のないスケジュールを一緒に決めていきます。週に1回からでもご利用可能です。</li>
+            </ul>
+          </div>
+
+          <div class="caution-section">
+            <h3>工賃(お仕事の報酬) には個人差があります</h3>
+            <ul>
+              <li>作業内容や通所日数によって金額は異なります。あくまで支援の一環であり、収入保障ではない点をご理解ください。</li>
+            </ul>
+          </div>
+
+          <div class="caution-section">
+            <h3>昼食代・交通費などの実費がかかる場合があります</h3>
+            <ul>
+              <li>必要に応じて、昼食代や送迎の費用をご負担いただくことがあります。詳細は事業所までお問い合わせください。</li>
+            </ul>
+          </div>
+
+          <div class="caution-section">
+            <h3>通院・福祉サービスとの併用は可能ですが事前相談を</h3>
+            <ul>
+              <li>他の支援サービスや医療機関と併用している場合は、スケジュールの調整などが必要になることがあります。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flow Q&A Section -->
+      <section class="flow-qa">
+        <h2 class="flow-step-title">よくあるご質問</h2>
+        <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>働いたことがないけど、利用できますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、大丈夫です。 
+              <br>当施設では、就労経験がない方や、ブランクのある方も安心して利用していた
+              <br>だけます。作業内容は一人ひとりのペースや特性に合わせてご提案しますので、
+              <br>初めての方でも心配いりません。</p>
+          </div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>体調に波があるけど通えますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、初めての方もお気軽にご相談ください。</p>
+          </div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>利用するのにお金はかかりますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、初めての方もお気軽にご相談ください。</p>
+          </div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>工賃(お給料)はどのくらいもらえますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、初めての方もお気軽にご相談ください。</p>
+          </div>
+        </div>
+          <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>見学や体験はできますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、初めての方もお気軽にご相談ください。</p>
+          </div>
+        </div>
+          <div class="qa-item">
+          <div class="qa-question">
+            <img src="./assets/image/question-icon.png" class="question-icon"
+              alt="question-icon">
+            <p>障がい者手帳がなくても利用できますか？</p>
+          </div>
+          <div class="qa-answer">
+            <img src="./assets/image/answer-icon.png" class="answer-icon"
+              alt="answer-icon">
+            <p>はい、初めての方もお気軽にご相談ください。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+        // Q&A Accordion functionality
+        document.querySelectorAll('.qa-question').forEach(function(q) {
+            q.onclick = function() {
+                const answer = this.nextElementSibling;
+                this.classList.toggle('open');
+                answer.classList.toggle('open');
+            };
+        });
+    </script>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+
+        <div class="contact-methods">
+          <div class="contact-line">
+            <p
+              class="contact-description">ご支援のご相談、ご利用については<br />お気軽にお問い合わせください。</p>
+            <p class="contact-subtitle">＼ご質問やご相談はいつでも承っております／</p>
+            <button class="line-contact-btn">
+              <img src="./assets/image/white-line.png" alt="LINE">
+              <span>LINEで相談する</span>
+            </button>
+          </div>
+          <div class="contact-phone">
+            <h3>お電話でのお問合せ</h3>
+            <div
+              style="display:flex; align-items: center; justify-content: center; gap: 10px;">
+              <img src="./assets/image/iconcall.png" alt="phone">
+
+              <p class="phone-num">000-000-0000</p>
+            </div>
+            <p class="phone-time">受付時間：月～金9:00～18:00</p>
+            <button class="contact-form-btn">
+              <img src="./assets/image/mail.png" class="mail-icon">
+              <span>お問い合わせ→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+      <div class="location-info">
+        <div class="facility-info">
+          <div class="voice-header">
+            <div class="logo-black"></div>
+            <h3>就労継続支援B型LINO</h3>
+          </div>
+          <div class="address">
+            <p>〒901-0156<br />沖縄県那覇市田原3丁目8-1ユリ香ハウス</p>
+            <p>TEL:080-8955-8079</p>
+            <p>アクセス:那覇空港より車で10分</p>
+          </div>
+          <div class="hours-schedule">
+            <img src="./assets/image/footercall.png" alt="Schedule">
+
+          </div>
+        </div>
+        <div class="map-placeholder"></div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>非営利徹底型一般社団法人<br />スマイル</h2>
+          <div class="footer-address">
+            〒901-0156<br /> 沖縄県那覇市田原3丁目8-1ユリ香ハウス
+            <br /> TEL:080-8955-8079
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-contact">
+            <div class="footer-contact-header">
+              <h3>お電話でのお問合せ</h3>
+              <div class="footer-phone-section">
+                <img src="./assets/image/iconcall.png" alt="phone">
+                <p class="phone-num">000-000-0000</p>
+              </div>
+              <p class="footer-hours">受付時間：月～金9:00～18:00</p>
+
+            </div>
+            <button class="footer-contact-btn">
+              <img src="./assets/image/mail.png" alt="contact"
+                class="mail-icon">
+              <span>お問い合わせ→</span>
+            </button>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>わたしたちについて</h4>
+              <ul>
+                <li><img src="./assets/image/arrowredish.png"
+                    alt="arrow">施設紹介</li>
+                <li><img src="./assets/image/arrowredish.png"
+                    alt="arrow">スタッフ紹介</li>
+                <li><strong>お知らせ</strong></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>サービス案内</h4>
+              <ul>
+                <li><img src="./assets/image/arrowredish.png"
+                    alt="arrow">就労支援B型事業所とは？</li>
+                <li><img src="./assets/image/arrowredish.png"
+                    alt="arrow">お仕事内容</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>ご利用の流れ</h4>
+              <div class="column">
+                <ul>
+                  <li><img src="./assets/image/arrowredish.png"
+                      alt="arrow">ご利用方法</li>
+                  <li><img src="./assets/image/arrowredish.png"
+                      alt="arrow">ご利用料金</li>
+                </ul>
+                <ul>
+                  <li><img src="./assets/image/arrowredish.png"
+                      alt="arrow">ご利用にあたっての注意事項</li>
+                  <li><img src="./assets/image/arrowredish.png"
+                      alt="arrow">よくある質問</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2025 就労継続支援B型LINO</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/main.js"></script>
+
+</html>

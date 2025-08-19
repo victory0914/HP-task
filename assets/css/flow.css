@@ -1,0 +1,243 @@
+ .container {
+     max-width: 1000px;
+     width: 100%;
+     margin: 0 auto;
+     background: #fff;
+     padding: 24px 16px;
+     box-sizing: border-box;
+ }
+ 
+ .flow-step-title {
+     font-size: 1.5rem;
+     color: #483B35;
+     background: #F1BCAC;
+     padding: 10px 25px;
+     border-radius: 5px 5px 0 0;
+     margin-top: 32px;
+     margin-bottom: 18px;
+ }
+ 
+ .flow-step,
+ .flow-price,
+ .flow-caution,
+ .flow-qa {
+     margin-bottom: 32px;
+     padding-inline: 20px;
+ }
+ 
+ .step-list {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+ }
+ 
+ .step-item {
+     height: 238px;
+     padding: 20px;
+     position: relative;
+     display: flex;
+     align-items: center;
+     background: #F4EFE6;
+     border-radius: 10px;
+     padding: 20px 18px;
+     gap: 18px;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+ }
+ 
+ .step-number-icon {
+     width: 60.5px;
+     position: absolute;
+     top: 20px;
+     left: 20px;
+ }
+ 
+ .step-details {
+     display: flex;
+     align-items: center;
+     margin-left: 12%;
+ }
+ 
+ .step-details-title {
+     margin-left: 10%;
+ }
+ 
+ .step-title {
+     width: 50%;
+     border-bottom: 1px solid #483B35;
+     padding-bottom: 10px;
+     font-weight: bold;
+     font-size: 18px;
+     margin-bottom: 4px;
+ }
+ 
+ .step-desc {
+     font-size: 16px;
+     color: #666;
+ }
+ 
+ .step-water-icon {
+     width: 60.5px;
+ }
+ /* Price Table */
+ 
+ .price-table-wrapper {
+     overflow: hidden;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025);
+ }
+ 
+ .flow-price table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 12px;
+     background: #fff;
+     table-layout: fixed;
+ }
+ /* equal column widths */
+ 
+ .flow-price th,
+ .flow-price td {
+     width: 50%;
+ }
+ 
+ .flow-price td {
+     padding: 10px;
+     border: 0.5px solid #867f7c;
+     text-align: center;
+ }
+ 
+ .flow-price th {
+     background: #F1BCAC;
+     font-weight: bold;
+     padding: 20px 10px;
+ }
+ /* round the top header cells to match the wrapper */
+ 
+ .flow-price .thead th:first-child {
+     border-top-left-radius: 12px;
+ }
+ 
+ .flow-price .thead th:last-child {
+     border-top-right-radius: 12px;
+ }
+ /* Caution */
+ 
+ .flow-caution ul {
+     padding-left: 20px;
+ }
+ 
+ .flow-caution li {
+     margin-bottom: 8px;
+     font-size: 0.96rem;
+ }
+ 
+ .caution-content {
+     border-radius: 8px;
+     padding: 10px 0 30px 0;
+     background: #fff;
+ }
+ 
+ .caution-section {
+     margin-bottom: 25px;
+ }
+ .caution-section li {
+      list-style-type:initial;
+      margin-left: 10px;
+ }
+ .caution-section:last-child {
+     margin-bottom: 0;
+ }
+ 
+ .caution-section h3 {
+     font-size: 1.1rem;
+     font-weight: 700;
+     color: #333;
+     margin: 0 0 15px 0;
+     font-family: 'Noto Sans JP', sans-serif;
+ }
+ 
+ .caution-section ul {
+     padding-left: 20px;
+     margin: 0;
+ }
+ 
+ .caution-section li {
+     margin-bottom: 8px;
+     font-size: 0.95rem;
+     line-height: 1.6;
+     color: #333;
+     font-family: 'Noto Sans JP', sans-serif;
+ }
+ /* Q&A Accordion */
+ 
+ .flow-qa .qa-item {
+  max-width: 700px;
+  margin: auto;   
+  border-bottom: 1px solid #474646;
+ }
+ 
+ .flow-qa .qa-question {
+     cursor: pointer;
+     padding: 14px 12px;
+     display: flex;
+     align-items: center;
+     /* background: #f5f0ee; */
+     font-size: 1rem;
+     position: relative;
+     transition: background 0.18s;
+ }
+ 
+ .flow-qa .qa-question::after {
+     content: "+";
+     position: absolute;
+     right: 22px;
+     font-size: 1.3rem;
+ }
+ 
+ .flow-qa .qa-question.open::after {
+     content: "-";
+ }
+ 
+ .flow-qa .qa-answer {
+     max-height: 0;
+     overflow: hidden;
+     display: flex;
+     /* background: #fff5f5; */
+     padding: 0 12px;
+     transition: max-height 0.25s ease, padding 0.2s;
+     font-size: 0.97rem;
+ }
+ 
+ .flow-qa .qa-answer.open {
+     max-height: 180px;
+     padding: 12px;
+     margin-bottom: 12px;
+ }
+ 
+ .flow-price tr:not(.thead) td:first-child {
+     background: #F6F6F6;
+ }
+
+ .question-icon, .answer-icon {
+   width: 41px;
+   height: 42px;
+   margin-right: 21px;
+ }
+ /* Responsive Styles */
+ 
+ @media (max-width: 700px) {
+     .container {
+         padding: 12px 4px;
+     }
+     .step-item {
+         padding: 12px 6px;
+         gap: 9px;
+     }
+     .step-icon {
+         font-size: 1.25rem;
+         margin-right: 4px;
+     }
+     .flow-step-title {
+         font-size: 1.18rem;
+         padding: 7px 9px;
+     }
+ }
